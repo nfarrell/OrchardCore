@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - dev
+    - neville
 
 # Do not build if there are only documentation changes
 skip_commits:
@@ -58,6 +59,7 @@ test_script:
   - cd .\test\Functional
   - test-setup.cmd
   - test-run.cmd
+  - test-setup.cmd
 
 clone_depth: 1
 test: on
